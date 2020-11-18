@@ -1,0 +1,65 @@
+html{
+scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width:0.95em;
+}
+::-webkit-scrollbar-track{
+    background-color: #34495e;
+}
+::-webkit-scrollbar-thumb{
+   background-image: linear-gradient(60deg,wheat,rgba(249, 127, 81,0.8));
+   border-radius:10px;
+}
+*{
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.attachment{
+    background-size: cover;
+    background-position-x:20%;
+    background-position-y:20%;
+    height:80vh;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(images/yoga-and-gratitude.jpg);
+}
+.side{
+    background-color:rgba(0,0,0,0.3);
+    width:20%;
+    color:white;
+    padding:2%;
+    text-align:left;
+    position:absolute;
+    margin-top:12%;
+    margin-left:10%;
+}
+
+.h5{
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.thumbnail{
+    background-color:#34495e;
+    margin:15%;
+    box-shadow:4px 12px 12px -12px #34495e,
+                -4px -12px 7px -12px #95a5a6;
+    transition:0.1s ease;
+
+}
+.thumbnail:hover{ 
+   transition:0.3s ease;
+    transform:rotate(-5deg);
+    box-shadow:0 2px 12px #34495e;
+   
+}
+.img-size{
+    width:100%;
+    height:35vh;
+}
+.cpt{
+    color:white;
+    padding:2%;
+    text-align:center;
+}
