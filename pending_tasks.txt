@@ -1,0 +1,6 @@
+1. Smaller width of header.
+2. Color combination change 
+3. Image Updation (Carousel & Asana)
+4. Website logo and Name
+5. Responsiveness
+6. Database Connection & Hosting
