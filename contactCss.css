@@ -5,7 +5,7 @@
  .backbtn{
      z-index: 2;
      border-radius: 50%;
-     background-color:rgba(249, 127, 81,0.8);
+     background-color:rgb(119,221,119);
      padding:1%;
    position: absolute;
    margin-top:5%;
@@ -39,7 +39,7 @@
      box-sizing: border-box;
      padding:2% 3%;
      text-align: justify;
-     background-image:linear-gradient(60deg,rgba(249, 127, 81,0.8),wheat);
+     background-image:linear-gradient(60deg,rgb(102,178,178),rgb(119,221,119));
  }
  .box h3{
      text-align:center;
@@ -55,10 +55,10 @@
     padding:2%;
     font-size:17px;
     border:none;
-    background-image:linear-gradient(60deg,rgba(249, 127, 81,0.3),wheat);
+    background-image:linear-gradient(60deg,rgba(119,221,119,0.3),rgba(102,178,178,0.3));
  }
  #Name:focus,#Email:focus,textarea:focus{
-     background-image:linear-gradient(60deg,wheat,rgba(249, 127, 81,0.3));
+    background-image:linear-gradient(60deg,rgba(102,178,178,0.3),rgba(119,221,119,0.3));
  }
  textarea{
      border-radius:5px;
@@ -68,7 +68,7 @@
      box-sizing: border-box;
      font-size:17px;
      border:none;
-     background-image:linear-gradient(60deg,rgba(249, 127, 81,0.3),wheat);
+     background-image:linear-gradient(60deg,rgba(119,221,119,0.3),rgba(102,178,178,0.3));
  }
  #Submit{
      background-color:rgba(249, 127, 81,0.8);
@@ -90,10 +90,23 @@
   
  .box{
     width:100%;
-   margin:0 3%;
+   margin:0 10%;
    margin-top:18%;
       box-shadow:2px 3px 10px  #bdc3c7;
-      padding:2% 3%;
+      padding:5% 4%;
       text-align: justify;
   } 
+ }
+ @media only screen and (max-width: 768px){
+     .box{
+    width: 100%;
+    margin: 0 2%;
+    margin-top: 18%;
+    box-shadow: 2px 3px 10px #bdc3c7;
+    padding: 2% 3%;
+    text-align: justify;
+     }
+     .backbtn,.question{	
+        display: none;	
+     }
  }

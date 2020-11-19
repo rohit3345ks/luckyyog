@@ -216,7 +216,14 @@
                 listitem(id,"Women should avoid practicing Chakrasana during pregnancy.");
             break;
             case "Paschimottanasana":
-                listitem(id,"Do not practice this asana if have these diseases : Abdominal ulcer,Asthma, Diarrhea, Back injury,Pregnancy, Sciatica, Slipped Disc");
+                listitem(id,"Bring your arms straight out to the sides and up over your head, reaching toward the ceiling.");
+                listitem(id,"Inhale and draw your spine up long.");
+                listitem(id,"As you exhale, begin to come forward, hinging at your hips. Imagine your pelvis as a bowl of water that is tipping forward.");
+                listitem(id,"On each inhale, lengthen your spine. You may come a bit out of your forward bend to do this.");
+                listitem(id,"On each exhale, deepen into your forward bend. Imagine your belly coming to rest on your thighs");
+                listitem(id,"Keep the neck as the natural extension of your spine, neither cranking it to look up nor letting it go completely.");
+                listitem(id,"When you have come to your full extension with the spine long, decide whether you want to stay here or let your spine round forward.");
+                listitem(id, "Take hold of your ankles or shins, whichever you can reach.");
             break;
             case "Gomukhasana":
                 listitem(id,"Avoid straining the body beyond the limits as it may cause back pain or spinal injury.");
