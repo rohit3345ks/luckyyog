@@ -37,9 +37,11 @@
             {
                 //**************************************************************** Beginners Asana **************************************************************//
                 case "Shavasana":
-                    listitem(id,"Support Your Legs on a Chair");
-                    listitem(id,"Support Your Back and Head with Folded Blankets");
-                    listitem(id,"Shavasana");
+                    listitem(id,"Lie flat on your back,Legs should be separated.");
+                    listitem(id,"Keep your arms at your side and your palms facing up. Just relax.");
+                    listitem(id,"Close your eyes and breathe deeply and slowly through the nostrils.");
+                    listitem(id,"Start concentrating from your head to your feet. Don’t move ahead without relaxing particular part of the body.");
+                    listitem(id,"On each inhaling and exhaling (breathing) think that your body is totally relaxed. Let your tension, stress, depression and worry run away on each exhaling.");
                 break;
                 case "Vajrasana":
                     listitem(id,"Keep the soles of the feet on both sides of the anus i.e. place the thighs on the legs one over the other and the soles on the buttocks.");
@@ -319,8 +321,94 @@
                 listitem(id,"Hold the breath for 3 seconds, stressing the arch of the spine and the contraction of the abdomen. Relax and practice again.");
             break;
 
+            case "Ardha_Matsyendrasana":
+                listitem(id,"Exhaling bend the right the leg and place the foot outside the left knee. Inhale.");
+                listitem(id,"Exhaling bend the left knee and place the sole to the right hip from outside.");
+                listitem(id,"Inhaling raise the left arm up.");
+                listitem(id,"Exhaling the catch the right big toe from outside of the right leg");
+                listitem(id,"Maintain the final position with normal breathing.");
+                listitem(id,"Gaze at the right side while in the final position.");
+                listitem(id,"Repeat the practice on another side after 5 breathing.");
+            break;
+            
+            case "Ushtrasana":
+                listitem(id,"Exhaling bend the right the leg and place the foot outside the left knee. Inhale.");
+                listitem(id,"Exhaling bend the left knee and place the sole to the right hip from outside.");
+                listitem(id,"Inhaling raise the left arm up.");
+                listitem(id,"Exhaling the catch the right big toe from outside of the right leg");
+                listitem(id,"Maintain the final position with normal breathing.");
+                listitem(id,"Gaze at the right side while in the final position.");
+                listitem(id,"Repeat the practice on another side after 5 breathing.");
+            break;
+            case "Pavanmuktasana":
+                listitem(id,"Lie flat on your back and keep the legs straight and relax breath deeply and rhythmically.");
+                listitem(id,"Inhale slowly and lift the legs and bend in the knee. Bring upwards to the chest till your thigh touches to stomach.");
+                listitem(id,"Hug your knees in place and lock your fingers.");
+                listitem(id,"Try to touch the knee with your nose tip. Hold this position for 20 to 30 seconds. You can extend it to 1 minute as per your capability.");
+                listitem(id,"Now exhale slowly and come back to the original position that is Shavasana (Lie straight).");
+                listitem(id,"Practice 3 to 5 cycles each day.");
+            break;
+            case "Ashwa_Sanchalanasana":
+                listitem(id,"From Padahastasana, bend the knees, inhale, look forward.");
+                listitem(id,"Place the palms of the hands flat on the floor beside the feet.");
+                listitem(id,"Exhale, stretch the right leg back as far as possible with the ball of the foot on the floor. At the same time, bend the left knee, keeping the left foot on the floor with the thigh parallel to the floor and knee forming a right ankle in the same position. Keep the arms straight.");
+                listitem(id,"In the final position, the weight of the body should be supported on both hands, the left foot, right knee and toes of the right foot.");
+                listitem(id,"The head should be tilted backward, the back arched, and the inner gaze directed upward to the eyebrow centre. Lengthen the torso, lift the chest, and keep the back of the neck long.");
+                listitem(id,"In the final pose, the palms of the hands should be flat on the floor initially. Later on, more advanced practitioners may come up onto the fingertips. Balance the weight in both thighs and the arms.");
+                listitem(id,"To release, exhale and step the right foot forward and step back to Padahastasana.");
+            break;
+            case "Veerasana":
+                listitem(id,"Keep your knees together as you separate your feet to either side until they are about 18 inches apart.");
+                listitem(id,"Exhale and lower your butt to sit on the floor between your feet. You may need to manually move your calf muscles out of the way to make this happen.");
+                listitem(id,"Make sure that you are not sitting on your feet, but rather between them with the tops of your feet on the floor (meaning the toes are not tucked under).");
+                listitem(id,"Your feet should point straight back, turning neither inward nor outward.");
+                listitem(id,"Slide your shoulders away from your ears. Rest your hands in your lap.");
+                listitem(id,"Remain in the pose for one minute or more.");
+                listitem(id,"Release by pressing your palms into the floor and lifting your butt. Cross your ankles beneath your body and extend your legs into Staff Pose (Dandasana).");
+            break;
 
+            case "Tadasana":
+                listitem(id,"Lift up all of your toes and fan them out, then drop them back down to create a wide, solid base.");
+                listitem(id,"Let your feet and calves root down into the floor.");
+                listitem(id,"Engage your quadriceps (the muscles on the front of your thighs) and draw them upward, causing your kneecaps to rise.");
+                listitem(id,"Rotate both thighs inward, creating a widening of the sit bones.");
+                listitem(id,"Maintain the natural curves of your spine.");
+                listitem(id,"Tone your belly, drawing it in slightly.");
+                listitem(id,"Shrug your shoulders up to your ears and then roll them back to release your shoulder blades down your back.");
+                listitem(id,"Let your arms hang naturally with the elbows slightly bent and the palms facing forward.");
+                listitem(id,"Your neck is long, your chin is neither tucked down nor lifted up, and the crown of your head rises toward the ceiling.");
+            break;
+            
 
+            case "Poorvottanasana":
+                listitem(id,"Sit with your legs outstretched in front of you in Dandasana.");
+                listitem(id,"Place your hands a little behind your hips with the fingers pointing towards the toes, point your toes.");
+                listitem(id,"Roll your inner thighs in, draw your belly in and up, and as you inhale, lift your hips up as high as you can, keeping your chin to your chest.");
+                listitem(id,"Firm your shoulder blades on your back to help lift your chest up.");
+                listitem(id,"When your chest is lifted you may choose to bring your head back.");
+                listitem(id,"Keep your chin tucked when you bring your head back, to the point where you can’t keep it tucked anymore. Then gently release your head.");
+                listitem(id,"Alternatively, if this feels too much for your neck, keep your head up and your chin towards your chest.");
+                listitem(id,"Stay here for about 5 breaths, then as you exhale, lower your hips back down into Dandasana.");
+            break;
+            
+            case "Vishnuasana":
+                listitem(id,"Roll over to lie down on your right side.");
+                listitem(id,"Support your head high on the right palm with elbow placed firm on the floor.");
+                listitem(id,"Left palm placed on the floor near the chest. If possible, straighten your legs.");
+                listitem(id,"Lift your left leg up and slowly bring it down.");
+                listitem(id,"Repeat about 3 times.");
+                listitem(id,"Now make circles rotating the whole leg from the pelvic joint.");
+                listitem(id,"Do it a few times(5-6 times) in one direction and then on the other.");
+                listitem(id,"Bring your leg down slowly and rest.");
+            break;
+
+            case "Shishuasana":
+                listitem(id,"Sit on your heels. Keeping your hips on the heels, bend forward, and lower your forehead to the floor.");
+                listitem(id,"Keep the arms alongside your body with hands on the floor, palms facing up.");
+                listitem(id,"Gently press your chest on the thighs.");
+                listitem(id,"Hold.");
+                listitem(id,"Slowly come up to sit on the heels, uncurling vertebra by vertebra and relax.");
+            break;
             default:
                     listitem(id,"The procedure for this asana couldn't be found.");
             break;

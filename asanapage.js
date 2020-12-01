@@ -69,7 +69,7 @@ var asana_name=localStorage.asana;  //asana_name is the sanskrit name and will b
                     //localStorage.clear();
                 break;
                 case "Parvatasana":
-                        titles('Mountain Pose',"tadasana");
+                        titles('Mountain Pose',"Tadasana");
                         //       " container id    ","Object id","Alternate Text","    Image Source   "
                         imageobj('asanaimagec','asana-Image','Parvatasana Image','./images/parvatasana.jpg');
     
@@ -166,7 +166,7 @@ var asana_name=localStorage.asana;  //asana_name is the sanskrit name and will b
                 case "Kashypasana":
                         titles('Hero Pose',"Kneeling Asana");
                         //       " container id    ","Object id","Alternate Text","    Image Source   "
-                        imageobj('asanaimagec','asana-Image','Veerasana Image','./images/veerasana.jpg');
+                        imageobj('asanaimagec','asana-Image','Veerasana Image','./images/kasyapasana.jpg');
 
                         //Procedure
                         procedure();
