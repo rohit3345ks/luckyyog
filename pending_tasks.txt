@@ -1,8 +1,6 @@
-1. Final Testing
 2. Whole Site Translation in Hindi, Punjabi
 3. Pranayaam Page (Asanas and asanapage content)
 4. Blog Page with features of Video, Image, text, News post and with Users Like, Comment & Share and User Info.
 5. Facebook Page External Link
 6. Carousel Images of Client (Lucky)
 7. Surya Namaskar Image Update
-8. 
