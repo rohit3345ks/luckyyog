@@ -29,7 +29,8 @@
     <div class="container-fluid">
       <div class="row">
         <img src="images/logo.png" alt="yoga" width="80px" height="80px" id="logo">
-      <h1>Lucky Yoga</h1>
+      <h1 class='notranslate'>Lucky Yoga</h1>
+        <div id="google_translate_element"></div>
       </div>
     </div> 
    </header>
@@ -107,7 +108,7 @@
          </li>
 
         <li class="nav-item">
-          <a class="nav-link text-capitalize" href="YogaByAsanaTest.html">Yoga by asana <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-capitalize" href="YogaByAsana.html">Yoga by asana <span class="sr-only">(current)</span></a>
         </li>
        </ul>    
                                 <a name="obesity_site"></a>
@@ -236,6 +237,11 @@
  <p class="text-center p">&copy;Copyright 2020, All rights reserved.</p>
  </div>
 
-
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ <script type='text/javascript'>
+  function googleTranslateElementInit(){
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+ </script>
 </body>
 </html>
