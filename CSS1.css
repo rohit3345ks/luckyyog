@@ -39,9 +39,12 @@ h1{
     height:20vh;
 }
 /****************navbar************************/
+#navbarNavDropdown{
+    justify-content: center;
+}
 .navbar{
     padding:8px 0;
-    margin-top:-10px;
+    margin:-10px;
     background-color:#34495e;
     border-top:2px solid rgb(119,221,119);
 }
