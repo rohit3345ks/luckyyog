@@ -4,3 +4,6 @@
 5. Facebook Page External Link - Done
 6. Carousel Images of Client (Lucky)
 7. Surya Namaskar Image Update
+8. Front images change
+9. Phone number at the bottom "mssmilelucky@gmail.com"
+10. 
