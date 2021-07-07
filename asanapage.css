@@ -39,11 +39,11 @@ h1{
      height:20vh;
      background-color:#34495e;
  }
- #logo
+ /* #logo
  {
      margin-top: -10px;
      margin-left: -30vw;
- }
+ } */
  #top-section .row
  {
      display: flex;
