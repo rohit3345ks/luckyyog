@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/luckkcvu/public_html/
-    - cp /home/luckkcvu/repositories/luckyyog/ $DEPLOYPATH
+    - cp -R /home/luckkcvu/repositories/luckyyog/ $DEPLOYPATH
