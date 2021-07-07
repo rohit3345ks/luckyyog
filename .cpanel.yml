@@ -2,5 +2,5 @@
 deployment:
   tasks:
 # Next line defines a DEPLOYPATH with the path to the document root of your website so that you will not have to enter it in each command manually:
-    - export DEPLOYPATH=/home/luckkcvu/public_html
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/luckkcvu/public_html/
+    - /bin/cp -R / $DEPLOYPATH
