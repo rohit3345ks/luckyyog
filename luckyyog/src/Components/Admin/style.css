@@ -1,0 +1,58 @@
+.admin-main{
+    width: 98vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-container{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 80%;
+}
+.login-form-container>h1{
+    color: rgb(52,73,94);
+    
+}
+.input-field{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-field *,.submitField{
+    font-size: 16px;
+}
+
+.submitField{
+    width: 70%;
+    padding: 9px 20px;
+    background-image: linear-gradient(60deg,rgb(119,221,119),rgb(102,178,178));
+    color: white;
+}
+
+.input-field>input,.submitField{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.input-field>input{
+    height: 2.85rem;
+    width: 18rem;
+    padding-left: 14px;
+    border: 2px solid rgb(119,221,119);
+}

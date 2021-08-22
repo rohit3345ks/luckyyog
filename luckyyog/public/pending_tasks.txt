@@ -1,0 +1,9 @@
+2. Whole Site Translation in Hindi, Punjabi - Done
+3. Pranayaam Page (Asanas and asanapage content) - 
+4. Blog Page with features of Video, Image, text, News post and with Users Like, Comment & Share and User Info.
+5. Facebook Page External Link - Done
+6. Carousel Images of Client (Lucky)
+7. Surya Namaskar Image Update
+8. Front images change
+9. Phone number at the bottom "mssmilelucky@gmail.com"
+10. 

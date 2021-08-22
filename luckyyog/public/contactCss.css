@@ -1,0 +1,112 @@
+ *{
+ font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+ 
+ .backbtn{
+     z-index: 2;
+     border-radius: 50%;
+     background-color:rgb(119,221,119);
+     padding:1%;
+   position: absolute;
+   margin-top:5%;
+   margin-left:94%;
+   transition: 0.2s ease;
+   -webkit-animation-name: colorChange;
+ 
+     -moz-animation-name: colorChange;
+ 
+     animation-name: colorChange;
+     animation-duration:10s;
+     animation-timing-function:ease-in-out;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+     margin-left:2%;
+ }
+ .backbtn:hover{
+     width:60px;
+     height:60px;
+     transform:rotate(360deg);
+     transition: 0.2s ease;
+    
+ }
+ 
+ .box{
+    margin-left:30%;
+     margin-top:6%;
+     width:36%;
+     box-shadow:2px 8px 8px -6px  #bdc3c7;
+     border-radius:5px;
+     box-sizing: border-box;
+     padding:2% 3%;
+     text-align: justify;
+     background-image:linear-gradient(60deg,rgb(102,178,178),rgb(119,221,119));
+ }
+ .box h3{
+     text-align:center;
+     padding-bottom:3%;
+ }
+ form{
+     text-align: center;   
+ }
+ #Name,#Email{
+     width:95%;
+    height:6vh;
+    border-radius:5px;
+    padding:2%;
+    font-size:17px;
+    border:none;
+    background-image:linear-gradient(60deg,rgba(119,221,119,0.3),rgba(102,178,178,0.3));
+ }
+ #Name:focus,#Email:focus,textarea:focus{
+    background-image:linear-gradient(60deg,rgba(102,178,178,0.3),rgba(119,221,119,0.3));
+ }
+ textarea{
+     border-radius:5px;
+     padding:2%;
+     width:95%;
+     height:18vh;
+     box-sizing: border-box;
+     font-size:17px;
+     border:none;
+     background-image:linear-gradient(60deg,rgba(119,221,119,0.3),rgba(102,178,178,0.3));
+ }
+ #Submit{
+     background-color:rgba(249, 127, 81,0.8);
+     border:none;
+     border-radius:37px;
+     color:white;
+     background-color: #34495e;
+     font-size:19px;
+     padding:2% 6%;
+     transition: 0.2s ease;
+     box-shadow:0 6px 9px -6px rgba(0,0,0,0.5);
+ }
+ #Submit:hover{
+     transform: scale(1.1);
+     transition: 0.3s ease;
+     box-shadow:0 9px 9px -6px rgba(0,0,0,0.5);
+ }
+ @media only screen and (max-width: 600px) {/* For Phones and xs devices*/
+  
+ .box{
+    width:100%;
+   margin:0 10%;
+   margin-top:18%;
+      box-shadow:2px 3px 10px  #bdc3c7;
+      padding:5% 4%;
+      text-align: justify;
+  } 
+ }
+ @media only screen and (max-width: 768px){
+     .box{
+    width: 100%;
+    margin: 0 2%;
+    margin-top: 18%;
+    box-shadow: 2px 3px 10px #bdc3c7;
+    padding: 2% 3%;
+    text-align: justify;
+     }
+     .backbtn,.question{	
+        display: none;	
+     }
+ }
