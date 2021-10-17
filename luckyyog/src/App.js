@@ -4,14 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Admin, Blog, Dashboard } from "./Components";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [signedInUser, setSignedInUser] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.authToken ? true : false);
+  const [signedInUser, setSignedInUser] = useState(localStorage.signedInUser ? JSON.parse(localStorage.signedInUser) : null);
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route exact path="/admin">
             <Admin
+              isLoggedIn={isLoggedIn}
               setLoggedIn={(loggedInStatus) => setIsLoggedIn(loggedInStatus)}
               setSignedInUser={(user) => setSignedInUser(user)} />
           </Route>

@@ -224,10 +224,13 @@
     </div>
   
     <script type="text/javascript">
-      let reactRoutes = ["/admin","/blog"];
+      let reactRoutes = ["/admin","/blog", "/dashboard"];
       if(reactRoutes.includes(location.pathname))
       {
-        console.log(document.getElementById("mainContent").style.display="none");
+        document.getElementById("mainContent").style.display="none";
+      }
+      else{
+        document.getElementById("mainContent").style.display="block";
       }
     </script>
 

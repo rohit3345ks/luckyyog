@@ -2,15 +2,15 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 const Dashboard = ({ isLoggedIn, signedInUser, setLoggedIn, setSignedInUser }) => {
     const history = useHistory();
-    console.log(signedInUser, "signedInUser");
     if (!isLoggedIn) {
-        history.push("/index.html");
+        history.push("/");
     }
     const handleLogOut = () => {
         setLoggedIn(false);
         setSignedInUser(null);
+        localStorage.clear();
         document.getElementById("mainContent").style.display = "block";
-        history.push("/index.html");
+        history.push("/");
     }
 
     return (
