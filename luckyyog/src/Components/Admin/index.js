@@ -20,15 +20,15 @@ const Admin = ({ setLoggedIn, setSignedInUser, isLoggedIn }) => {
             ...data
         }).then(responseData => {
             setLoggedIn(true);
-            setSignedInUser(responseData.data);
+            setSignedInUser(responseData.data.data);
             localStorage.setItem('authToken', responseData.data.authToken);
-            localStorage.setItem('signedInUser', JSON.stringify(responseData.data));
+            localStorage.setItem('signedInUser', JSON.stringify(responseData.data.data));
             history.push("/dashboard");
         }).catch(err => {
             console.log(err.message);
         });
     }
-    
+
     return (
         <div className="admin-main">
             <div className="login-form-container">

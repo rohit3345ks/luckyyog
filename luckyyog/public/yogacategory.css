@@ -139,6 +139,7 @@ ul .nb{
     box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
     transition: 0.3s ease;
 }
+
 .check{
     list-style-image: url('images/check.svg');
     list-style-position: inside;
