@@ -25,7 +25,9 @@ function App() {
             />
           </Route>
           <Route exact path="/blog">
-            <Blog />
+            <Blog
+              isLoggedIn={isLoggedIn}
+            />
           </Route>
         </Switch>
       </Router>

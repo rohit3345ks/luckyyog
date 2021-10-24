@@ -16,8 +16,8 @@ const Dashboard = ({ isLoggedIn, signedInUser, setLoggedIn, setSignedInUser }) =
     return (
         <div>
             <div className='dashboard-header'>
-                <h2 className='dashboard-header-heading'> 👋 <span style={{fontWeight: "bold"}}>{signedInUser?.username ?? ""}</span>, here you can manage your blogs </h2>
-                <button className="logout-button" onClick={handleLogOut}>Log Out</button>
+                <h2 className='heading'> 👋 <span style={{fontWeight: "bold"}}>{signedInUser?.username ?? ""}</span>, here you can manage your blogs </h2>
+                <button className="button" onClick={handleLogOut}>Log Out</button>
             </div>
             <div className="blog-card" onClick={()=>{history.push('/blog')}}>
                 <span>Blogs</span>

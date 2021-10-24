@@ -1,236 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yoga By Poses | Yoga</title>
-    <link rel='icon' href="images/logo.png">
-      <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="images/logo.png" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="yogacategory.css">
-<script type="text/javascript">
-    function passvalue(asana)
-    {
-        localStorage.setItem('asana',asana);
-    }  
-</script>
-</head>
-<body>
-  <header id="top-section">
-    <div class="container-fluid">
-      <div class="row">
-        <img src="images/logo.png" alt="yoga" width="80px" height="80px" id="logo">
-      <h1 class='notranslate'>Lucky Yoga</h1>
-        <div id="google_translate_element"></div>
+    <link rel="stylesheet" href="yogacategory.css" />
+    <script type="text/javascript">
+      function passvalue(asana) {
+        localStorage.setItem("asana", asana);
+      }
+    </script>
+  </head>
+  <body>
+    <header id="top-section">
+      <div class="container-fluid">
+        <div class="row">
+          <img
+            src="images/logo.png"
+            alt="yoga"
+            width="80px"
+            height="80px"
+            id="logo"
+          />
+          <h1 class="notranslate">Lucky Yoga</h1>
+          <div id="google_translate_element"></div>
+        </div>
       </div>
-    </div> 
-   </header>
+    </header>
 
-    <nav style="background-color:#34495e;" class="navbar navbar-expand-lg sticky-top">
-      
+    <nav
+      style="background-color: #34495e"
+      class="navbar navbar-expand-lg sticky-top"
+    >
       <!--******************Collapsible Button******************-->
-     <button  class="navbar-toggler out" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"><i style="color:#f2f2f2" class="fa fa-bars outln"></i></span>
-     </button>
+      <button
+        class="navbar-toggler out"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"
+          ><i style="color: #f2f2f2" class="fa fa-bars outln"></i
+        ></span>
+      </button>
 
-  <a href="contactUs.html"><img class="question" src="images/question.svg" alt="not available" 
-    width="50px" height="50px" ></a>
+      <a href="contactUs.html"
+        ><img
+          class="question"
+          src="images/question.svg"
+          alt="not available"
+          width="50px"
+          height="50px"
+      /></a>
 
-    <a onclick="history.back()"><img class="backbtn" src="images/backbtn.svg" alt="not available" 
-      width="50px" height="50px" ></a>
+      <a onclick="history.back()"
+        ><img
+          class="backbtn"
+          src="images/backbtn.svg"
+          alt="not available"
+          width="50px"
+          height="50px"
+      /></a>
 
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-       <ul class="navbar-nav">
-        <li class="nav-item active nb">
-          <a class="nav-link" href="index.html">Home </a>
-         </li>
-         
-
-        <li class="nav-item dropdown nb">
-             <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Yoga </a>
-            <div class="dropdown-menu dm" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item di" href="intro.html#intropara">Introduction</a>
-              <a class="dropdown-item di" href="intro.html#principlespara">Principles</a>
-              <a class="dropdown-item di" href="intro.html#benefitspara" >Benefits</a>
-             </div>
-           </li> 
-
-
-        <li class="nav-item dropdown nb">
-             <a class="nav-link dropdown-toggle text-capitalize slide" href="#" id="navbarDropdownMenuLink"
-             data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false">
-              Yoga By levels 
-             </a>
-
-            <div class="dropdown-menu dm" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item di" href="yogabylevels.html#beginners_site">Beginners </a>
-              <a class="dropdown-item di" href="yogabylevels.html#intermediate_site">Intermediate</a>
-              <a class="dropdown-item di" href="yogabylevels.html#advanced_site">Advanced</a>
-             </div>
-           </li> 
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active nb">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
 
           <li class="nav-item dropdown nb">
-             <a class="nav-link dropdown-toggle text-capitalize active_item" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Yoga By Poses
-             </a>
+            <a
+              class="nav-link dropdown-toggle text-capitalize"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Yoga
+            </a>
+            <div
+              class="dropdown-menu dm"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item di" href="intro.html#intropara"
+                >Introduction</a
+              >
+              <a class="dropdown-item di" href="intro.html#principlespara"
+                >Principles</a
+              >
+              <a class="dropdown-item di" href="intro.html#benefitspara"
+                >Benefits</a
+              >
+            </div>
+          </li>
 
-            <div class="dropdown-menu dm" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item di" href="yogabyposes.html#standingpose_site">Standing pose</a>
-              <a class="dropdown-item di" href="yogabyposes.html#sittingpose_site">Sitting pose</a>
-              <a class="dropdown-item di" href="yogabyposes.html#lyingonstomachpose_site">Lying down on stomach</a>
-              <a class="dropdown-item di" href="yogabyposes.html#lyingonbackpose_site"> Lying down on back</a>
-             </div>
-           </li> 
+          <li class="nav-item dropdown nb">
+            <a
+              class="nav-link dropdown-toggle text-capitalize slide"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Yoga By levels
+            </a>
 
-        <li class="nav-item dropdown nb">
-           <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Yoga By health problems
-           </a>
+            <div
+              class="dropdown-menu dm"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a
+                class="dropdown-item di"
+                href="yogabylevels.html#beginners_site"
+                >Beginners
+              </a>
+              <a
+                class="dropdown-item di"
+                href="yogabylevels.html#intermediate_site"
+                >Intermediate</a
+              >
+              <a class="dropdown-item di" href="yogabylevels.html#advanced_site"
+                >Advanced</a
+              >
+            </div>
+          </li>
 
-          <div class="dropdown-menu dm" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item di" href="yogabyhealthproblems.html#obesity_site">Obesity</a>
-            <a class="dropdown-item di" href="yogabyhealthproblems.html#anxiety_site">Anxiety and Depression</a>
-            <a class="dropdown-item di" href="yogabyhealthproblems.html#heartproblems_site">Heart Problems</a>
-            <a class="dropdown-item di" href="yogabyhealthproblems.html#highBP_site">High Blood Pressure</a>
-            <a class="dropdown-item di" href="yogabyhealthproblems.html#digestive_site">Digestive Problems</a>
-           </div>
-         </li>
+          <li class="nav-item dropdown nb">
+            <a
+              class="nav-link dropdown-toggle text-capitalize active_item"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Yoga By Poses
+            </a>
 
-        <li class="nav-item">
-          <a class="nav-link text-capitalize" href="YogaByAsana.html">Yoga by asana <span class="sr-only">(current)</span></a>
-        </li>
-       </ul>    <a name="standingpose_site"></a>
+            <div
+              class="dropdown-menu dm"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a
+                class="dropdown-item di"
+                href="yogabyposes.html#standingpose_site"
+                >Standing pose</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyposes.html#sittingpose_site"
+                >Sitting pose</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyposes.html#lyingonstomachpose_site"
+                >Lying down on stomach</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyposes.html#lyingonbackpose_site"
+              >
+                Lying down on back</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown nb">
+            <a
+              class="nav-link dropdown-toggle text-capitalize"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Yoga By health problems
+            </a>
+
+            <div
+              class="dropdown-menu dm"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a
+                class="dropdown-item di"
+                href="yogabyhealthproblems.html#obesity_site"
+                >Obesity</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyhealthproblems.html#anxiety_site"
+                >Anxiety and Depression</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyhealthproblems.html#heartproblems_site"
+                >Heart Problems</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyhealthproblems.html#highBP_site"
+                >High Blood Pressure</a
+              >
+              <a
+                class="dropdown-item di"
+                href="yogabyhealthproblems.html#digestive_site"
+                >Digestive Problems</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-capitalize" href="YogaByAsana.html"
+              >Yoga by asana <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <a name="standingpose_site"></a>
       </div>
     </nav>
-
 
     <!-- Main Content of the Page -->
 
     <!--Standing Pose-->
 
     <div class="container">
-        <div class="row">
-            <div class="category">
-                <img src="images/standingpose.jpg" alt="Standing Pose" id="category1-image" width="450px" height="320px">
-                <div class="category1-content">
-                    <h1 class="category-heading">Standing Pose</h1>
-                        <form action="asanapage.html" class="buttons">
-                            <button class="asana-button" onmousedown="passvalue('Vrikshasana');">Vrikshasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Trikonasana');">Trikonasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Ardha_Chakrasana');">Ardha Chakrasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Veerbhadrasana');">Veerbhadrasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Utkatasana');">Utkatasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Garudasana');">Garudasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Kati_Chakrasana');">Kati Chakrasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Hastapadasana');">Hastapadasana</button>
-                        </form>
-                </div>      <a name="sittingpose_site"></a>
-            </div>
-        </div>
-
-
-        <!--Sitting Pose-->
-
-        <div class="row">
-            <div class="category category2">
-              <img src="images/sittingpose.jpg" alt="Sitting Pose" id="category2-image" width="400px" height="320px">
-                <div class="category-content">
-                    <h1 class="category-heading">Sitting Pose</h1>
-                        <form action="asanapage.html" class="buttons">
-                            <button class="asana-button" onmousedown="passvalue('Badhakonasana');">Badhakonasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Paschimottanasana');">Paschimottanasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Poorvottanasana');">Poorvottanasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Padmasana');">Padmasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Shishuasana');">Shishuasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Vajrasana');">Vajrasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Gomukhasana');">Gomukhasana</button>
-                        </form> 
-                </div>              <a name="lyingonstomachpose_site"></a>
-            </div>
+      <div class="row">
+        <div class="category">
+          <img
+            src="images/standingpose.jpg"
+            alt="Standing Pose"
+            id="category1-image"
+            width="450px"
+            height="320px"
+          />
+          <div class="category1-content">
+            <h1 class="category-heading">Standing Pose</h1>
+            <form action="asanapage.html" class="buttons">
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Vrikshasana');"
+              >
+                Vrikshasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Trikonasana');"
+              >
+                Trikonasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Ardha_Chakrasana');"
+              >
+                Ardha Chakrasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Veerbhadrasana');"
+              >
+                Veerbhadrasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Utkatasana');"
+              >
+                Utkatasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Garudasana');"
+              >
+                Garudasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Kati_Chakrasana');"
+              >
+                Kati Chakrasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Hastapadasana');"
+              >
+                Hastapadasana
+              </button>
+            </form>
           </div>
-          
-          <!--Lying Down On Stomach-->
-          <div class="row">
-            <div class="category">
-                <img src="images/lyingdownonstomach.jpg" alt="Lying Down On Stomach" id="category3-image" width="400px" height="320px">
-                <div class="category3-content">
-                    <h1 class="category-heading">Lying Down on Stomach</h1>
-                        <form action="asanapage.html" class="buttons">
-                            <button class="asana-button" onmousedown="passvalue('Dhanurasana');">Dhanurasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Shalabhasana');">Shalabhsana</button>
-                            <button class="asana-button" onmousedown="passvalue('Vashishtasana');">Vashishtasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Bhujangasana');">Bhujangasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Salamba_Bhujangasana');">Salamba Bhujangasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Viparita_Shalabhasana');">Viparita Shalabhasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Makara_Adho_Mukha_Svanasana');">Makara Adho Mukha Svanasana</button>
-                        </form>
-                </div>                            <a name="lyingonbackpose_site"></a>
-            </div>
+          <a name="sittingpose_site"></a>
         </div>
+      </div>
 
-        <!--Lying Down on Back-->
-        <div class="row">
-            <div class="category">
-                <img src="images/lyingdownonback.jpg" alt="Lying Down on Back" id="category4-image" width="400px" height="320px">
-                <div class="category3-content">
-                    <h1 class="category-heading">Lying Down on Back</h1>
-                        <form action="asanapage.html" class="buttons">
-                            <button class="asana-button" onmousedown="passvalue('Matsyasana');">Matsyasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Halasana');">Halasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Shavasana');">Shavasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Sarvangasana');">Sarvangasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Vishnuasana');">Vishnuasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Naukasana');">Naukasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Natrajasana');">Natrajasana</button>
-                            <button class="asana-button" onmousedown="passvalue('Pavanmuktasana');">Pavanamuktasana</button>
-                        </form>
-                </div>
-            </div>
+      <!--Sitting Pose-->
+
+      <div class="row">
+        <div class="category category2">
+          <img
+            src="images/sittingpose.jpg"
+            alt="Sitting Pose"
+            id="category2-image"
+            width="400px"
+            height="320px"
+          />
+          <div class="category-content">
+            <h1 class="category-heading">Sitting Pose</h1>
+            <form action="asanapage.html" class="buttons">
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Badhakonasana');"
+              >
+                Badhakonasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Paschimottanasana');"
+              >
+                Paschimottanasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Poorvottanasana');"
+              >
+                Poorvottanasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Padmasana');"
+              >
+                Padmasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Shishuasana');"
+              >
+                Shishuasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Vajrasana');"
+              >
+                Vajrasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Gomukhasana');"
+              >
+                Gomukhasana
+              </button>
+            </form>
+          </div>
+          <a name="lyingonstomachpose_site"></a>
         </div>
+      </div>
+
+      <!--Lying Down On Stomach-->
+      <div class="row">
+        <div class="category">
+          <img
+            src="images/lyingdownonstomach.jpg"
+            alt="Lying Down On Stomach"
+            id="category3-image"
+            width="400px"
+            height="320px"
+          />
+          <div class="category3-content">
+            <h1 class="category-heading">Lying Down on Stomach</h1>
+            <form action="asanapage.html" class="buttons">
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Dhanurasana');"
+              >
+                Dhanurasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Shalabhasana');"
+              >
+                Shalabhsana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Vashishtasana');"
+              >
+                Vashishtasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Bhujangasana');"
+              >
+                Bhujangasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Salamba_Bhujangasana');"
+              >
+                Salamba Bhujangasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Viparita_Shalabhasana');"
+              >
+                Viparita Shalabhasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Makara_Adho_Mukha_Svanasana');"
+              >
+                Makara Adho Mukha Svanasana
+              </button>
+            </form>
+          </div>
+          <a name="lyingonbackpose_site"></a>
+        </div>
+      </div>
+
+      <!--Lying Down on Back-->
+      <div class="row">
+        <div class="category">
+          <img
+            src="images/lyingdownonback.jpg"
+            alt="Lying Down on Back"
+            id="category4-image"
+            width="400px"
+            height="320px"
+          />
+          <div class="category3-content">
+            <h1 class="category-heading">Lying Down on Back</h1>
+            <form action="asanapage.html" class="buttons">
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Matsyasana');"
+              >
+                Matsyasana
+              </button>
+              <button class="asana-button" onmousedown="passvalue('Halasana');">
+                Halasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Shavasana');"
+              >
+                Shavasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Sarvangasana');"
+              >
+                Sarvangasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Vishnuasana');"
+              >
+                Vishnuasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Naukasana');"
+              >
+                Naukasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Natrajasana');"
+              >
+                Natrajasana
+              </button>
+              <button
+                class="asana-button"
+                onmousedown="passvalue('Pavanmuktasana');"
+              >
+                Pavanamuktasana
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
+    <!------------------------footer-------------------------->
+    <footer>
+      <article class="social-links">
+        <li>
+          <a
+            href="https://www.instagram.com/spine.luckyyoga/"
+            target="blank"
+            data-toggle="tooltip"
+            title="Instagram"
+            ><i id="insta" class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/Spineluckyyoga-100230911785096"
+            target="blank"
+            data-toggle="tooltip"
+            title="Facebook"
+            ><i id="facebook" class="fa fa-facebook-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" data-toggle="tooltip" title="Linkedin"
+            ><i id="linkedin" class="fa fa-linkedin-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" data-toggle="tooltip" title="youtube"
+            ><i id="youtube" class="fa fa-youtube-play"></i
+          ></a>
+        </li>
+      </article>
 
-<!------------------------footer-------------------------->
-<footer>
+      <div id="about">
+        <a href="contactUs.html"
+          ><span class="about3 text-capitalize">contact us</span></a
+        >
+      </div>
 
-  <article class="social-links">
+      <div class="footer2">
+        <p class="text-center p">&copy;Copyright 2020, All rights reserved.</p>
+      </div>
+    </footer>
 
-  <li><a href="https://www.instagram.com/spine.luckyyoga/" target="blank" data-toggle="tooltip" title="Instagram"><i id="insta" class="fa fa-instagram"></i></a></li>
-  <li><a href="https://www.facebook.com/Spineluckyyoga-100230911785096" target="blank" data-toggle="tooltip" title="Facebook"><i id="facebook" class="fa fa-facebook-square"></i></a></li>
-  <li><a href="#" data-toggle="tooltip" title="Linkedin"><i id="linkedin" class="fa fa-linkedin-square"></i></a></li>
-  <li><a href="#" data-toggle="tooltip" title="youtube"><i id="youtube" class="fa fa-youtube-play"></i></a></li>
-</article>
-
-<div id="about">
-  <a href="contactUs.html"><span class="about3 text-capitalize">contact us</span></a>
-  </div>
-
-</footer>
-<div class="footer2">
- <p class="text-center p">&copy;Copyright 2020, All rights reserved.</p>
- </div>
-
- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
- <script type='text/javascript'>
-  function googleTranslateElementInit(){
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-  }
- </script>
-</body>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+  </body>
 </html>
