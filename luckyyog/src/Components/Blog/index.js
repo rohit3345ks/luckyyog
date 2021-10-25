@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Modal from "../Modal";
 
 const Blog = ({ isLoggedIn }) => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleModal = () => {
+        setIsModalOpen(isModalOpen => !isModalOpen);
+    }
+
     return (
         <>
+            <Modal
+                open={isModalOpen}
+                toggleModal={toggleModal}
+            >
+                Hi
+            </Modal>
             {isLoggedIn ?
                 (<div className="blog-container">
                     <div className='blog-header'>
                         <h2 className='heading'> Admin Blog Page </h2>
-                        <button className="button"> Add Blog </button>
+                        <button className="button" onClick={toggleModal}> Add Blog </button>
                     </div>
                 </div>)
                 :
