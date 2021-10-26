@@ -6,8 +6,8 @@ const Modal = ({ children, open = false, toggleModal = () => { } }) => {
     return (
         <>
             {open ? <>
-                <div className="back-drop"></div>
-                <div className="category modal-container">
+                <div className="back-drop" onClick={toggleModal}></div>
+                <div className={`category modal-container${open ? " active" : ""}`}>
                     <button className="close-button" onClick={toggleModal}><img src={closeIcon} alt="Close" /></button>
                     This will be the Modal
 
