@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import BlogForm from '../Form';
 import Modal from "../Modal";
 
 const Blog = ({ isLoggedIn }) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const [selectedBlog, setSelectedBlog] = useState(null);
     const toggleModal = () => {
         setIsModalOpen(isModalOpen => !isModalOpen);
     }
@@ -15,7 +16,7 @@ const Blog = ({ isLoggedIn }) => {
                 open={isModalOpen}
                 toggleModal={toggleModal}
             >
-                Hi
+                <BlogForm />
             </Modal>
             {isLoggedIn ?
                 (<div className="blog-container">

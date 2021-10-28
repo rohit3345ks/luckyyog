@@ -494,6 +494,9 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
   }
+  .question {
+    margin-left: -8%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -511,7 +514,6 @@ a:hover {
     flex-flow: row wrap;
   }
 }
-
 .navbar .active_item {
   color: white;
 }

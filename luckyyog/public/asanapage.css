@@ -348,6 +348,9 @@ a:hover {
   .navbar-nav {
     margin-left: 4%;
   }
+  .question {
+    margin-left: -8%;
+  }
 }
 
 @media only screen and (min-width: 992px) {

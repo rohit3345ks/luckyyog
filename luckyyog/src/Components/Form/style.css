@@ -1,0 +1,58 @@
+.form-container {
+  height: 90%;
+}
+
+.form-container > b {
+  font-size: larger;
+}
+.form-container > form {
+  display: flex;
+  margin-top: 2%;
+  padding: 1% 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-field-container > span {
+  width: 20%;
+  text-align: left;
+}
+
+.input-field {
+  width: 80%;
+  padding: 5px;
+}
+
+#blog-post {
+  height: 80vh;
+  background-color: white;
+}
+
+.submitField {
+  width: 70%;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.input-field-container:nth-child(3) {
+  align-items: flex-start;
+}
+
+.ql-container {
+  height: 85%;
+  width: 100%;
+}
+
+.quill {
+  display: flex;
+  flex-direction: column;
+}
