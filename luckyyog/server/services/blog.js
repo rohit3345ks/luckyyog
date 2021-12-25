@@ -14,20 +14,35 @@ blogServices.addBlog = (title, description, post, author) => {
         });
 
         newBlog.save().then(response => {
-            console.log(response, "response from DB on saving data");
             resolve(utils.sendResponse(STATUS_CODES.SUCCESS, {
                 message: STRINGS.BLOG_SAVED,
                 data: response
             }))
         }).catch(err => {
-            console.log("Main nhi save kr rha data");
             console.log(err.message);
             reject(utils.sendResponse(STATUS_CODES.ERROR, {
-                message: STARINGS.BLOG_SAVE_FAILED
+                message: STARINGS.BLOG_SAVE_FAILED,
+                data: null
+            }));
+        })
+    });
+}
+
+blogServices.getBlogs = () => {
+    return new Promise((resolve, reject) => {
+        blogModel.find().then(response => {
+            resolve(utils.sendResponse(STATUS_CODES.SUCCESS, {
+                message: STRINGS.BLOG_FETCHED,
+                data: response
+            }));
+        }).catch(err => {
+            console.log(err.message, "error in GET /blog");
+            reject(utils.sendResponse(STATUS_CODES.ERROR, {
+                message: STRINGS.BLOG_FETCH_ERROR,
+                data: null
             }));
         })
     })
-    // return Promise.resolve(utils.sendResponse(200, { message: "success", data: "test" }));
 }
 
 module.exports = blogServices;

@@ -3,7 +3,7 @@ import Editor from '../Editor';
 import axios from 'axios';
 import "./style.css";
 
-const BlogForm = () => {
+const BlogForm = ({ toggleModal }) => {
 
     const [formValues, setFormValues] = useState({
         title: "",
@@ -14,17 +14,21 @@ const BlogForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        let isEmpty = Object.values(formValues).some(val => val === '' || val === '<p><br></p>');
 
-        console.log("values being sent through API", formValues);
-
-        axios.post('http://localhost:4000/blog', {
-            ...formValues
-        }).then((response) => {
-            console.log(response.data, "response from server")
-        }).catch(err => {
-            console.log("Request failed");
-            console.log(err.message);
-        })
+        if (!isEmpty) {
+            axios.post('http://localhost:4000/blog', {
+                ...formValues
+            }).then((response) => {
+                toggleModal();
+            }).catch(err => {
+                console.log("Request failed");
+                console.log(err.message);
+            });
+        }
+        else {
+            alert('Please enter text in all boxes');
+        }
     }
 
     return (

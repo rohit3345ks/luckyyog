@@ -6,6 +6,8 @@ CONSTANTS.STRINGS = {
     LOGGED_IN: "You have successfully logged in!",
     VALID_TOKEN_REQUEST: "Please enter a valid token!",
     LOGGED_OUT: "You have successfully logged out.",
+    BLOG_FETCHED: "Blog Fetched Successfully",
+    BLOG_FETCH_ERROR: "Sorry! Couldn't fetch the blogs",
     BLOG_SAVED: "Blog Saved successfully",
     BLOG_SAVE_FAILED: "Sorry! Couldn't save your blog.",
 }
