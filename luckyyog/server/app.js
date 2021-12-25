@@ -4,6 +4,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotEnv = require('dotenv');
 const userRoutes = require('./routes/user');
+const blogRoutes = require('./routes/blog');
+
 dotEnv.config();
 const db = require('./start/db');
 const port = process.env.SERVER_PORT || 5000;
@@ -22,6 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(userRoutes);
+app.use(blogRoutes);
 
 app.listen(port, () => {
     console.log("server has started and listening to PORT", port);

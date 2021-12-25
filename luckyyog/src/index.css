@@ -50,7 +50,7 @@ code {
   height: 35vh;
   width: 30vw;
   margin: 15px auto;
-  background: url("/src/assets/blog.jpg");
+  background: url("/src/assets/blog.jpg") round;
   display: flex;
   justify-content: left;
   align-items: flex-end;

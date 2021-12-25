@@ -35,6 +35,11 @@
   background-color: white;
 }
 
+.ql-editor {
+  font-size: 17px;
+  font-family: none;
+}
+
 .submitField {
   width: 70%;
   padding: 12px 20px;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
-import 'react-quill/dist/quill.core.css';
+import Editor from '../Editor';
+import axios from 'axios';
 import "./style.css";
 
 const BlogForm = () => {
@@ -9,32 +8,31 @@ const BlogForm = () => {
     const [formValues, setFormValues] = useState({
         title: "",
         description: "",
-        post: ""
+        post: "",
+        author: JSON.parse(localStorage.getItem('signedInUser') || '')?._id ?? ''
     });
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formValues, "values");
-    }
 
-    const quillModules = {
-        toolbar: [
-            ['bold', 'italic', 'underline', 'blockquote'],        // toggled buttons      // custom button values
-            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-            [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
-            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-            [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-            [{ 'font': [] }],
-            [{ 'align': [] }],
-            ['clean', "image", "video"]                                         // remove formatting button
-        ]
+        console.log("values being sent through API", formValues);
+
+        axios.post('http://localhost:4000/blog', {
+            ...formValues
+        }).then((response) => {
+            console.log(response.data, "response from server")
+        }).catch(err => {
+            console.log("Request failed");
+            console.log(err.message);
+        })
     }
 
     return (
-        <div className="form-container">
+        <div className="form-container" >
             <b>Add / Update Blog</b>
             <form onSubmit={handleSubmit}>
                 {/* Blog Title */}
-                <label for="blog-title" className="input-field-container">
+                <label htmlFor="blog-title" className="input-field-container">
                     <span>Blog Title:</span>
                     <input type="text" id="blog-title" value={formValues.title} placeholder="Enter Blog Title" className="input-field"
                         onChange={(e) => { setFormValues({ ...formValues, title: e.target.value }) }}
@@ -42,7 +40,7 @@ const BlogForm = () => {
                 </label>
 
                 {/* Blog Description */}
-                <label for="blog-description" className="input-field-container">
+                <label htmlFor="blog-description" className="input-field-container">
                     <span>Blog Description:</span>
                     <textarea row="3" cols="50" value={formValues.description} className="input-field" id="blog-description" placeholder="Enter Blog Description"
                         onChange={(e) => { setFormValues({ ...formValues, description: e.target.value }) }}
@@ -50,22 +48,20 @@ const BlogForm = () => {
                 </label>
 
                 {/* Blog Post */}
-                <label for="blog-post" className="input-field-container">
+                <label htmlFor="blog-post" className="input-field-container">
                     <span>Blog Post:</span>
-                    <ReactQuill
-                        id="blog-post"
-                        className="input-field"
-                        value={formValues.post}
-                        onChange={(value) => { setFormValues({ ...formValues, post: value }) }}
-                        modules={quillModules}
-                    />
-                    {/* <textarea id="blog-post" value={formValues.post} cols="50" row="150" className="input-field" placeholder="Write your beautiful blog here"
-                        onChange={(e) => { setFormValues({ ...formValues, post: e.target.value }) }}
-                    ></textarea> */}
+                    <div style={{ width: "80%", padding: 5 }}>
+                        <Editor
+                            value={formValues.post}
+                            changeHandler={(value) => setFormValues({ ...formValues, post: value })}
+                            id='blog-post'
+                        />
+                    </div>
+
                 </label>
                 <input className="submitField" type="submit" value="Publish Blog" />
             </form>
-        </div>
+        </div >
     )
 }
 

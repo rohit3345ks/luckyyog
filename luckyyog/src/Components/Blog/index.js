@@ -3,7 +3,6 @@ import BlogForm from '../Form';
 import Modal from "../Modal";
 
 const Blog = ({ isLoggedIn }) => {
-
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedBlog, setSelectedBlog] = useState(null);
     const toggleModal = () => {
